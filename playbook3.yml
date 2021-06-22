@@ -1,0 +1,8 @@
+---
+- name: playbook3.yml
+  hosts: docker
+  tasks:
+    - name: create docker image
+      service: 
+       name: docker 
+       task: docker pull centos
